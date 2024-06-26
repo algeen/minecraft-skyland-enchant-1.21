@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "skyland-enchant",
+	"version": "${version}",
+	"name": "Skyland Enchant",
+	"description": "A mod that tries to improve enchanting, inspired by the upgrade system in Skylanders.",
+	"authors": [
+		"elyot"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/skyland-enchant/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.elliot.skylandenchant.SkylandEnchant"
+		],
+		"client": [
+			"net.elliot.skylandenchant.SkylandEnchantClient"
+		],
+		"fabric-datagen": [
+			"net.elliot.skylandenchant.SkylandEnchantDataGenerator"
+		]
+	},
+	"mixins": [
+		"skyland-enchant.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
